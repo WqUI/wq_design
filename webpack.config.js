@@ -23,12 +23,11 @@ module.exports = {
       {
         test: /\.less$/,
         include: [
-          path.resolve(__dirname, 'components'),
           path.resolve(__dirname, 'src')
         ],
         exclude: [
           path.resolve(__dirname, '.docz'),
-          path.resolve(__dirname, 'doc-comps')
+          path.resolve(__dirname, 'doc-components')
         ],
         use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
       },

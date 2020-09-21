@@ -3,13 +3,13 @@
     "baseUrl": "./",
     "paths": {
       "happy-ui": [
-        "components/index.ts"
+        "src/components/index.ts"
       ],
       "happy-ui/esm/*": [
-        "components/*"
+        "src/components/*"
       ],
       "happy-ui/lib/*": [
-        "components/*"
+        "src/components/*"
       ]
     },
     "target": "esnext",
@@ -24,8 +24,6 @@
     "resolveJsonModule": true,
   },
   "include": [
-    "components",
-    "doc-comps",
     "config",
     "src"
   ],
@@ -36,7 +34,6 @@
     "lib",
     "esm",
     ".docz",
-    "doc-comps",
-    "global.d.ts"
+    "doc-components"
   ]
 }
