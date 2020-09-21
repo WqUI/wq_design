@@ -1,28 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Button } from './components';
-import './App.css';
-
-// const logo = require('./logo.svg') as string;
+import { Alert } from '../components';
 
 export default function App() {
-  return (
-    <div className="App">
-      <header className="App-header" >
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload........
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-      </a>
-        <Button>hello</Button>
-      </header>
-    </div>
-  )
+  return (<div>
+    <Alert kind="warning">这是一条警告···</Alert>
+    <Alert kind="info">这是一条info···</Alert>
+    <Alert kind="negative">这是一条negative···</Alert>
+    <Alert kind="positive">这是一条positive···</Alert>
+  </div>)
 }

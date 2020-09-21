@@ -1,1 +1,0 @@
-# wq_design

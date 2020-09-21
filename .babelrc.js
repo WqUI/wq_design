@@ -1,19 +1,33 @@
-'use strict';
-
-const output = process.env.BABEL_OUTPUT;
-const modules = output == null ? false : output;
-
-const options = {
-  "plugins": [
-    '@babel/proposal-object-rest-spread',
-    ['@babel/proposal-class-properties', { loose: true }],
-    "@babel/plugin-transform-runtime"
+module.exports = {
+  presets: ['@babel/env', '@babel/typescript', '@babel/react'],
+  plugins: [
+    '@babel/proposal-class-properties',
+    [
+      '@babel/plugin-transform-runtime',
+      {
+        corejs: 3,
+        helpers: true,
+      },
+    ],
   ],
-  "presets": [
-    ['@babel/env', { loose: true, modules }, 'one'],
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ]
+  env: {
+    esm: {
+      presets: [
+        [
+          '@babel/env',
+          {
+            modules: false,
+          },
+        ],
+      ],
+      plugins: [
+        [
+          '@babel/plugin-transform-runtime',
+          {
+            useESModules: true,
+          },
+        ],
+      ],
+    },
+  }
 };
-
-module.exports = options;
