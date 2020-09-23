@@ -9,7 +9,10 @@ module.exports = {
     sourceMapFilename: '[file].map'
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    alias: {
+      "@": './src'
+    },
+    extensions: ['.tsx', '.ts', '.js', '.less']
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist/index.html'),

@@ -61,8 +61,8 @@ export const HappyBox: React.FC<Props> = ({ code, title, desc, children }) => {
           padding={10}
           className="container__editor"
           style={{
-            fontFamily: '"Fira code", "Fira Mono", monospace',
-            fontSize: 14,
+            fontFamily: 'Consolas, "Courier New", monospace',
+            fontSize: 16,
           }}
         />
       </div>

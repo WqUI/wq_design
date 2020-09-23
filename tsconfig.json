@@ -10,6 +10,15 @@
       ],
       "happy-ui/lib/*": [
         "src/components/*"
+      ],
+      "@": [
+        "src/*"
+      ],
+      "components": [
+        "src/components/*"
+      ],
+      "utils": [
+        "src/utils/*"
       ]
     },
     "target": "esnext",

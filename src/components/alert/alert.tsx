@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style/index';
+import './style';
 import { AlertProps, KindMap } from './interface';
 
-const prefixCls = 'happy-alert';
+const prefixCls = 'wq-alert';
 
 const kinds: KindMap = {
   info: '#5352ED',
